@@ -1,0 +1,3 @@
+Unix path: /nfs/HomeWeb/mqiu
+
+set appropriate permissions: FixWebPerm
