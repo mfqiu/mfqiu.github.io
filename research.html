@@ -10,11 +10,12 @@
 		<!-- Meta Description -->
 		<meta name="description" content="Mingfeng Qiu's research">
 		<!-- Meta Keyword -->
-		<meta name="keywords" content="mingfeng,qiu,webpage,research,teaching,cv,ubc,math,fluid,mechanics,publication,education">
+		<meta name="keywords" content="mingfeng,qiu,research,teaching,cv,ubc,ens,math,physics,fluid,mechanics,biophysics,publication,education">
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
 		<title>Research | Mingfeng Qiu</title>
+		<link rel="shortcut icon" type="image/x-icon" href="phys.ico">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
 		<!--
 		CSS
@@ -41,9 +42,9 @@
 				<div class="container-fluid">
 					<div class="header-wrap">
 						<div class="header-top d-flex justify-content-between align-items-center">
-							<div class="logo">
+							<!-- <div class="logo">
 								<a href="index.html"><img src="img/logo.png" alt="" style="width: 15%; height: 15%"></a>
-							</div>
+							</div> -->
 							<div class="main-menubar d-flex align-items-center">
 								<nav>
 									<a href="index.html">Home</a>
@@ -53,7 +54,7 @@
 									<!--<a href="https://blogs.ubc.ca/nematicstreet/" target="_blank">Blog</a>-->
 									<a href="index.html#contact">Contact</a>
 								</nav>
-								<div class="menu-bar"><span class="lnr lnr-menu"></span></div><!---->
+								<!-- <div class="menu-bar"><span class="lnr lnr-menu"></span></div> -->
 							</div>
 						</div>
 					</div>
@@ -69,12 +70,11 @@
 						<div class="col-md-10">
 							<h1 class="about-title mb-60"><span style="font-weight:lighter">RESEARCH</span></h1>
 							<a href="#publications" class="genric-btn primary-border circle arrow">Jump to publications<span class="lnr lnr-arrow-right"></span></a><br><br><br><br>
-							<h6>Thesis Advisor</h6>
-							<p><u><a href="http://www.math.ubc.ca/~jfeng/" target="_blank" class="mylink">Prof. James J. Feng</a></u></p>
 							<h6>Collaborators (alphabetical)</h6>
 							<p><u><a href="https://web.njit.edu/~shahriar/" target="_blank" class="mylink">Prof. Shahriar Afkhami </a></u>(New Jersey Institute of Technology, USA)<br>
 							<u><a href="http://web.it.nctu.edu.tw/~chingyao/" target="_blank" class="mylink">Prof. Ching-Yao Chen </a></u>(National Chiao Tung University, Taiwan, ROC)<br>
-							<u><a href="http://www.crpp-bordeaux.cnrs.fr/spip.php?article886&lang=en" target="_blank" class="mylink">Prof. Jean-Christophe Loudet </a></u>(CRPP | Université de Bordeaux, France)
+							<u><a href="https://sites.google.com/view/loc-le-goff-phd-home-page/accueil" target="_blank" class="mylink">Dr. Loïc Le Goff</a></u>(Aix Marseille Université, Institut Fresnel, CNRS, France)<br>
+							<u><a href="http://www.crpp-bordeaux.cnrs.fr/spip.php?article886&lang=en" target="_blank" class="mylink">Prof. Jean-Christophe Loudet </a></u>(Université de Bordeaux, Centre de Recherche Paul Pascal, CNRS, France)
 							</p>
 						</div>
 						<div class="col-md-1"></div>
@@ -84,9 +84,9 @@
 					<div class="row">
 						<div class="col-md-1"></div>
 						<div class="col-md-5">
-							<h4 class="about-title mb-10"><span style="font-weight:lighter">Multiphase flow of liquid crystals (work in progress)</span></h4>
-							<p>Liquid crystal is a soft matter consisting of anisotropic constituent molecules. They flow more or less freely but spontaneously align themselves in a particular order, which gives rise to elasticity in the material. Existing computational models for liquid crystal flows suffer from either a deficient description of the molecular configuration field, or a lack of capability to treat a free interface with consistent boundary conditions. We develop a phase-field method that combines the states-of-the-art in both aspects. The PDEs are solved with a mixed finite element method. It opens doors to exploring new physics of interacting capillary and elastic effects in liquid crystalline free-surface flows.</p>
-							<!--<p><b>Representative publication</b>: Qiu M, Chyr A, Sanders AP, Raeymaekers B, Designing prosthetic knee joints with bio-inspired bearing surfaces; <i>Tribology International</i>, 2014:77, pp. 106-110. <u><a href="https://doi.org/10.1016/j.triboint.2014.04.025" class="mylink" target="_blank">(https://doi.org/10.1016/j.triboint.2014.04.025)</a></u></p>-->
+							<h4 class="about-title mb-10"><span style="font-weight:lighter">Multiphase flow of liquid crystals</span></h4>
+							<p>Liquid crystal is a soft matter consisting of anisotropic constituent molecules. The molecules spontaneously align in a particular order, which gives rise to elasticity in the material. Existing computational models for liquid crystal interfacial flows have employed components that make it challenging to either reproduce topological defect structures consistent with experiments, or capture interfacial forces. We develop a model that combines a tensor order parameter for liquid crystal molecular orientations with a phase-field formalism which approximates a sharp-interface limit. We compute the solution with a mixed finite element method. It opens doors to exploring new physics of interacting capillary and elastic effects in liquid crystalline free-surface flows.</p>
+							<p><b>Representative publication</b>: Qiu M, Feng JJ, Loudet J-C, (2021) Phase-field model for elastocapillary flows of liquid crystals; <i>Physical Review E</i>, 103, 022706. <u><a href="https://doi.org/10.1103/PhysRevE.103.022706" class="mylink" target="_blank">(https://doi.org/10.1103/PhysRevE.103.022706)</a></u></p>
 						</div>
 						<div class="col-md-5">
 							<img src="img/polar.png" alt="" class="img-fluid float-left mr-20 mb-20" style="width:100%"><br>
@@ -142,18 +142,45 @@
 					<div class="row" id="publications">
 						<div class="col-md-1"></div>
 						<div class="col-md-10">
-							<h3 class="about-title mb-10"><span style="font-weight:lighter">Publications</span></h3>
-							<p>
-							9. Loudet J-C, <b>Qiu M</b>, Hemauer J, Feng JJ. (2020) Drag force on a particle straddling a fluid interface: influence of interfacial deformations. <i>European Physical Journal E</i>, 43, pp. 1-13. (<u><a href="https://www.springer.com/gp/about-springer/media/research-news/all-english-research-news/distortion-isn-t-a-drag-on-fluid-straddling-particles/17807070" class="mylink" target="_blank">Springer Research News</a></u>) (<u><a href="https://www.epj.org/epje-news/1890-epje-highlight-distortion-isnt-a-drag-on-fluid-straddling-particles" class="mylink" target="_blank">EPJE Highlight</a></u>) (<u><a href="https://www.europhysicsnews.org/articles/epn/pdf/2020/03/epn2020-51-3.pdf" class="mylink" target="_blank">Europhysics News</a></u>) (<u><a href="https://phys.org/news/2020-03-distortion-isnt-fluid-straddling-particles.html" class="mylink" target="_blank">phys.org</a></u>) (<u><a href="https://www.sciencedaily.com/releases/2020/03/200318104437.htm" class="mylink" target="_blank">ScienceDaily</a></u>)<br>
-							8. Xu X, Dey M, <b>Qiu M</b>, Feng JJ. (2020) Modeling of van der Waals force with smoothed particle hydrodynamics: application to the rupture of thin liquid films. <i>Applied Mathematical Modeling</i>, 83, pp. 719-735.<br>
-							7. <b>Qiu M</b>, Afkhami S, Chen C-Y, Feng JJ. (2018) Interaction of a pair of ferrofluid drops in a rotating magnetic field. <i>Journal of Fluid Mechanics</i>, 846, pp. 121-142.<br>
-							6. <b>Qiu M</b>, Raeymaekers B. (2015) The load-carrying capacity and friction coefficient of incompressible textured parallel slider bearings with surface roughness inside the texture features. <i>Proceedings of the Institution of Mechanical Engineers Part J—Journal of Engineering Tribology</i>, 229, pp. 547-556 (invited).<br>
-							5. <b>Qiu M</b>, Chyr A, Sanders AP, Raeymaekers B. (2014) Designing prosthetic knee joints with bio-inspired bearing surfaces. <i>Tribology International</i>, 77, pp. 106-110.<br>
-							4. Chyr A, <b>Qiu M</b>, Speltz J, Jacobsen RL, Sanders AP, Raeymaekers B. (2014) A patterned microtexture to reduce friction and wear and increase longevity of prosthetic hip joints. <i>Wear</i>, 315, pp. 51-57.<br>
-							3. <b>Qiu M</b>, Bailey BN, Stoll R, Raeymaekers B. (2014) The accuracy of the compressible Reynolds equation for predicting the local pressure in gas-lubricated textured parallel slider bearings. <i>Tribology International</i>, 72, pp. 83-89.<br>
-							2. <b>Qiu M</b>, Minson BR, Raeymaekers B.(2013) The effect of texture shape on the friction coefficient and stiffness of gas-lubricated parallel slider bearings. <i>Tribology International</i>, 67, pp. 278-288.<br>
-							1. <b>Qiu M</b>, Delic A, Raeymaekers B. (2012) The effect of texture shape on the load-carrying capacity of gas-lubricated parallel slider bearings. <i>Tribology Letters</i>, 48, pp. 315-328.
-							</p>
+							<h3 class="about-title mb-20"><span style="font-weight:lighter">Publications</span></h3>
+
+							<h4 class="about-title mb-10"><span style="font-weight:lighter">soft matter and fluid mechanics</span></h4>
+							<ol class="ordered-list">
+								<li><span>Loudet J-C, Choudhury A, <b>Qiu M</b>, Feng JJ, (2022) Particle trapped at the isotropic-nematic liquid crystal interface: elastocapillary phenomena and drag forces. <i>Physical Review E</i>, 105:044607</span></li>
+
+								<li><span><b>Qiu M</b>, Feng JJ, Loudet J-C, (2021) Phase-field model for elastocapillary flows of liquid crystals. <i>Physical Review E</i>, 103:022706</span></li>
+
+								<li><span>Hemauer J, <b>Qiu M</b>, Feng JJ, Loudet J-C, (2021) Particle rotation speeds up capillary interactions. <i>European Physical Journal E</i>, 44:30</span></li>
+
+								<li><span>Loudet J-C, <b>Qiu M</b>, Hemauer J, Feng JJ. (2020) Drag force on a particle straddling a fluid interface: influence of interfacial deformations. <i>European Physical Journal E</i>, 43:1-13. (<u><a href="https://www.springer.com/gp/about-springer/media/research-news/all-english-research-news/distortion-isn-t-a-drag-on-fluid-straddling-particles/17807070" class="mylink" target="_blank">Springer Research News</a></u>) (<u><a href="https://www.epj.org/epje-news/1890-epje-highlight-distortion-isnt-a-drag-on-fluid-straddling-particles" class="mylink" target="_blank">EPJE Highlight</a></u>) (<u><a href="https://www.europhysicsnews.org/articles/epn/pdf/2020/03/epn2020-51-3.pdf" class="mylink" target="_blank">Europhysics News</a></u>) (<u><a href="https://phys.org/news/2020-03-distortion-isnt-fluid-straddling-particles.html" class="mylink" target="_blank">phys.org</a></u>) (<u><a href="https://www.sciencedaily.com/releases/2020/03/200318104437.htm" class="mylink" target="_blank">ScienceDaily</a></u>)</span></li>
+								
+
+								<li><span>Xu X, Dey M, <b>Qiu M</b>, Feng JJ. (2020) Modeling of van der Waals force with smoothed particle hydrodynamics: application to the rupture of thin liquid films. <i>Applied Mathematical Modeling</i>, 83:719-735.</span></li>
+
+								<li><span><b>Qiu M</b>, Afkhami S, Chen C-Y, Feng JJ. (2018) Interaction of a pair of ferrofluid drops in a rotating magnetic field. <i>Journal of Fluid Mechanics</i>, 846:121-142.</span></li>
+							</ol>
+
+							<br>
+							<h4 class="about-title mb-10"><span style="font-weight:lighter">tribology</span></h4>
+							<ol class="ordered-list">
+								<li><span><b>Qiu M</b>, Raeymaekers B. (2015) The load-carrying capacity and friction coefficient of incompressible textured parallel slider bearings with surface roughness inside the texture features. <i>Proceedings of the Institution of Mechanical Engineers Part J—Journal of Engineering Tribology</i>, 229:547-556 (invited).</span></li>
+
+								<li><span><b>Qiu M</b>, Chyr A, Sanders AP, Raeymaekers B. (2014) Designing prosthetic knee joints with bio-inspired bearing surfaces. <i>Tribology International</i>, 77:106-110.</span></li>
+
+								<li><span>Chyr A, <b>Qiu M</b>, Speltz J, Jacobsen RL, Sanders AP, Raeymaekers B. (2014) A patterned microtexture to reduce friction and wear and increase longevity of prosthetic hip joints. <i>Wear</i>, 315:51-57.</span></li>
+
+								<li><span><b>Qiu M</b>, Bailey BN, Stoll R, Raeymaekers B. (2014) The accuracy of the compressible Reynolds equation for predicting the local pressure in gas-lubricated textured parallel slider bearings. <i>Tribology International</i>, 72:83-89.</span></li>
+
+								<li><span><b>Qiu M</b>, Minson BR, Raeymaekers B.(2013) The effect of texture shape on the friction coefficient and stiffness of gas-lubricated parallel slider bearings. <i>Tribology International</i>, 67:278-288.</span></li>
+
+								<li><span><b>Qiu M</b>, Delic A, Raeymaekers B. (2012) The effect of texture shape on the load-carrying capacity of gas-lubricated parallel slider bearings. <i>Tribology Letters</i>, 48:315-328.</span></li>
+							</ol>
+
+							<br>
+							<h4 class="about-title mb-10"><span style="font-weight:lighter">mathematics of general interest</span></h4>
+							<ol class="ordered-list">
+								<li><span><b>Qiu M (Chinese translation)</b>, Peter Higgins, <i>Numbers: A Very Short Introduction</i>. Oxford University Press, 2011, Dook Media Group Ltd. Shanghai, China, 2021.</span></li>
+							</ol>
 						</div>
 						<div class="col-md-1"></div>
 					</div>
@@ -162,15 +189,27 @@
 					<div class="row">
 						<div class="col-md-1"></div>
 						<div class="col-md-10">
-							<h3 class="about-title mb-10"><span style="font-weight:lighter">Invited Talks</span></h3>
-							<p>
-							<b>Qiu M</b>, Loudet J-C, Feng JJ. (May 2020) A Phase-field method for computing elasto-capillary flows of liquid crystals. Department of Mechanics, College of Engineering, Peking University, Beijing, China.<br>
-							<b>Qiu M</b>, Loudet J-C, Feng JJ. (Aug 2019) A Phase-field method for computing interfacial flows of liquid crystals. UBC Fluids Seminar Series. Vancouver, BC, Canada.<br>
-							<b>Qiu M</b>, Feng JJ, Loudet J-C. (Feb 2019) Dynamics of particles trapped at fluid interfaces. SIAM Conference on Computational Science and Engineering. Minisymposium 174: Advances and Applications in Numerical Methods for Interfacial Flows – Part I of II. Spokane, WA, USA.<br>
-							<b>Qiu M</b>, Afkhami S, Chen C-Y, Feng JJ. (Jul 2017) Magnetophoretic interaction of a pair of ferrofluid droplets in a rotating magnetic field. Droplets 2017. Los Angeles, CA, USA.<br>
-							<b>Qiu M</b>, Afkhami S, Chen C-Y, Feng JJ. (Jul 2017) Magnetophoretic interaction of a pair of ferrofluid droplets in a rotating magnetic field. 14th US National Congress of Computational Mechanics. Minisymposium: Free and Moving Boundary Problems: Methods and Applications. Montréal, QC, Canada.<br>
-							<b>Qiu M</b>, Afkhami S, Chen C-Y, Feng JJ. (Jun 2017) Magnetophoretic interaction of a pair of ferrofluid droplets in a rotating magnetic field. 18th International Workshop on Numerical Methods for Non-Newtonian Flows and 3rd Complex Fluids and Flows in Industry and Nature Workshop. Vancouver, BC, Canada.	
-							</p>
+							<h3 class="about-title mb-10"><span style="font-weight:lighter">Invited talks</span></h3>
+
+							<!-- <p> -->
+								<ul class="unordered-list">
+									<li><span><b>ECMTB22</b> (Heidelberg, Germany 2022), European Society of Mathematical and Theoretical Biology–Society of Mathematical Biology Joint Meeting, Minisymposium: Pattern formation in developmental processes.</span></li>
+
+									<li><b>SIAM MS21</b> (Bilbao, Spain/Virtual 2021), SIAM Conference on Mathematical Aspects of Materials Science, Minisymposium 64: Interface morphologies in liquid crystalline material.</li>
+
+									<li><b>École Normale Supérieure</b> (Paris, France 2020), Nonlinear Physics Seminars.</li>
+
+									<li><b>Peking University</b> (Beijing, China 2020), College of Engineering Global Talent Forum.</li>
+
+									<li><b>SIAM CSE19</b> (Spokane, US 2019), SIAM Conference on Computation Science and Engineering, Minisymposium 174: Advances and applications in numerical methods for interfacial flows.</li>
+
+									<li><b>Droplets</b> (Los Angeles, US 2017).</li>
+
+									<li><b>USNCCM</b> (Montréal, Canada 2017), 14th US National Congress of Computational Mechanics, Minisymposium: Free and moving boundary problems: methods and applications. </li>
+
+									<li><b>IWNMNNF</b> (Vancouver, Canada 2016), 18th International Workshop on Numerical Methods for Non-Newtonian	Flows and 3rd Complex Fluids and Flows in Industry and Nature Workshop.</li>
+								</ul>
+							<!-- </p> -->
 						</div>
 						<div class="col-md-1"></div>
 					</div>
@@ -179,27 +218,23 @@
 					<div class="row">
 						<div class="col-md-1"></div>
 						<div class="col-md-10">
-							<h3 class="about-title mb-10"><span style="font-weight:lighter">Contributed Presentations</span></h3>
-							<p>
-							<b>Qiu M</b>, Afkhami S, Chen C-Y, Feng JJ. (Nov 2016) Magnetophoretic interaction of ferrofluid droplets in a rotating magnetic field. 69th APS/DFD Annual Meeting. Session M37: Drops: Complex Fluids. Portland, OR, USA.<br>
-							<b>Qiu M</b>, Raeymaekers B. (May 2014) Improving tribological performance of prosthetic knee joints using surface microtexturing. 69th STLE Annual Meeting. Lake Buena Vista, FL, USA.<br>
-							<b>Qiu M</b>, Raeymaekers B. (May 2014) A patterned microtexture to improve the longevity of prosthetic knee joints. 2nd International Conference on Biotribology. Toronto, ON, Canada.<br>
-							<b>Qiu M</b>, Bailey B, Stoll R, Raeymaekers B. (Oct 2012) The validity of the compressible Reynolds equation for gas lubricated textured parallel slider bearings. ASME/STLE International Joint Tribology Conference. Denver, CO, USA.<br>
-							<b>Qiu M</b>, Raeymaekers B. (Oct 2012) Performance of different microtexture shapes for textured gas lubricated parallel slider bearings. ASME/STLE International Joint Tribology Conference, Denver, CO, USA.<br>
-							<b>Qiu M</b>, Raeymaekers B. (May 2012) Unconstrained optimization of microtexture parameters for gas lubricated textured parallel slider bearings. 67th STLE Annual Meeting. St. Louis, MO, USA. (poster)	
-							</p>
-						</div>
-						<div class="col-md-1"></div>
-					</div>
+							<h3 class="about-title mb-10"><span style="font-weight:lighter">Contributed presentations</span></h3>
 
-					<br><br><br>
-					<div class="row">
-						<div class="col-md-1"></div>
-						<div class="col-md-10">
-							<h3 class="about-title mb-10"><span style="font-weight:lighter">General Science</span></h3>
-							<p>
-							Peter Higgins, Numbers: A Very Short Introduction. Oxford University Press, 2011. <b>Qiu M</b> (Chinese translator), Chinese version to be published by Dook Media Group Ltd. Shanghai, China, 2020 (in press).	
-							</p>
+							<!-- <p> -->
+								<ul class="unordered-list">
+									<li><b>APS/DFD</b> (Virtual 2020), 73th APS Division of Fluid Dynamics Annual Meeting, Session J12: Multiphase flows: computational methods.</li>
+
+									<li><b>APS/DFD</b> (Portland, US 2016), 69th APS Division of Fluid Dynamics Annual Meeting, Session M37: Drops:	complex fluids.</li>
+
+									<li><b>STLE</b> (Lake Buena Vista, US 2014), 69th Society of Tribologists and Lubrication Engineers Annual Meeting.</li>
+
+									<li><b>2nd International Conference on Biotribology</b> (Toronto, Canada 2014).</li>
+
+									<li><b>ASME/STLE International Joint Tribology Conference</b> (Denver, US 2012).</li>
+
+									<li><b>STLE</b> (St. Louis, US 2012), 67th Society of Tribologists and Lubrication Engineers Annual Meeting.</li>
+								</ul>
+							<!-- </p> -->
 						</div>
 						<div class="col-md-1"></div>
 					</div>
